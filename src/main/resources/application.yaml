@@ -3,12 +3,12 @@ server:
 
 spring:
     datasource:
-        url: jdbc:postgresql://dpg-ct1srh3tq21c73es0lcg-a.oregon-postgres.render.com
+        url: jdbc:postgresql://dpg-ct1srh3tq21c73es0lcg-a.oregon-postgres.render.com:5432/projetojava
         username: projetojava_user
         password: 6SZWstW6l7nR9nJSSWRVecHieeENhMhO
         driver-class-name: org.postgresql.Driver
         initialize: true
-    
+        
     jpa:
         hibernate:
             ddl-auto: create-drop
