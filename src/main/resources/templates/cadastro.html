@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro de clientes </title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+    
+</head>
+<body>
+    <div class="botao"> 
+        <button class="botoes-centrais"> 
+            <a style="color: #fff; text-decoration: none; justify-content: center;" th:href="@{/}">Voltar para o index </a>
+        </button> 
+    </div>
+
+    <div class="container">
+        <section class="header">
+    <h1>Cadastro de cliente</h1>
+</section>
+    <!-- O Object é para variaveis, onde joga em uma classe de java
+
+    SOMENTE THYMELEAFT:
+        - @link
+        - $variaveis (objetos) 
+        - * Acesso de leitura em um atributo
+    GET mostrar essa pagina, POST cadastrar o cara e ir para a pag de sucesso -->
+    <!--  No cadastro eu tenho que ter esse objeto cliente -->
+    <!-- @ é link, $ é um objeto java, ou seja vou linkar o objeto java chamado cliente com esse objeto aqui, tipo um this-->
+    <form th:action="@{/cadastro}" method="post" th:object="${cliente}" class="form"> 
+
+        <!-- o estrelinha * vc é OBRIGADO a criar uma classe cliente que é obrigado a criar uma classe que tenha o atributo NOME  -->
+        <div class="form-content">
+        <label for="nome">Nome:</label>
+        <input type="text" th:field="*{nome}" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="form-content">
+        <label for="email">Email:</label>
+        <input type="text" th:field="*{email}" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="form-content">
+        <label for="telefone">Telefone:</label> 
+        <input type="text" th:field="*{telefone}" placeholder="Digite seu telefone" required>
+        </div>
+
+        <div class="form-content">
+        <label for="endereco">Endereço: </label> 
+        <input type="text" th:field="*{endereco}" placeholder="Digite seu endereço" required>
+        </div>
+
+        <input type="submit" value="Cadastrar" name="cadastrar">
+    
+    </form>
+
+    
+</div>
+</body>
+</html>

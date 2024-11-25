@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <title>Atualizar cliente</title>
+    <link rel="stylesheet" href="/css/cadastro.css"> 
+
+</head>
+<body>
+    <div class="botao"> 
+        <button class="botoes-centrais"> 
+            <a style="color: #fff; text-decoration: none; justify-content: center;" th:href="@{/}">Voltar para o index </a>
+        </button> 
+    </div>
+
+    <div class="container">
+    <section class="header">
+    <h1>Atualização de informações do cliente</h1>
+    </section>
+
+    
+
+
+    <form th:action="@{'/atualizarcliente/' + ${id}}" method="post" th:object="${cliente}" class="form"> 
+
+        <!-- o estrelinha * vc é OBRIGADO a criar uma classe cliente que é obrigado a criar uma classe que tenha o atributo NOME -->
+         <div class="form-content">
+        <label for="nome">Nome: </label>
+        <input type="text" th:field="*{nome}">
+        </div>
+
+        <div class="form-content">
+        <label for="email">Email: </label>
+        <input type="text" th:field="*{email}">
+    </div>
+
+        <div class="form-content">
+        <label for="telefone">Telefone:</label>
+        <input type="text" th:field="*{telefone}">
+    </div>
+
+        <div class="form-content">
+        <label for="endereco">Endereço: </label>
+        <input type="text" th:field="*{endereco}">
+        </div>
+        
+        <input type="submit" value="Atualizar" name="atualizar">
+    
+    </form>
+    
+    
+
+</div>
+</body>
+</html>

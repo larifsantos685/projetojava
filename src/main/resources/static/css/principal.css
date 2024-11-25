@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a { 
+    text-decoration: none;
+
+} */
+
+
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #F2F0F0; 
+    height: 100vh;
+    transition: 0.4s;
+    color: #f2f2f2f6;
+}
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.principal {
+    /* color:#fff;  */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* para na section principal ficar um dolado do outro */
+.flex {
+    display: flex;
+
+}
+
+
+/* header e navbar */
+
+
+header {
+    padding: 25px 3%;
+    background-color: #0D0D0D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+h1 {
+    color: #000; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+
+header .menu-desktop ul a:hover {
+    color: #fff;
+    transform: scale(1.15);
+    border-bottom: 2px solid #fff;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+  .botoes-centrais {
+    color: #f2f0f0; 
+    background-color: #F22EAE;
+    margin: 0 5px 0 5px; 
+    border-radius: 5px; 
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+  }
+  .botoes-centrais a {
+    text-decoration: none;
+    color: #fff; 
+  }
+  img { 
+    width: 400px;
+  }
+/* Novo contêiner para centralizar a imagem */
+.img-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px 50px 50px; 
+    align-items: center;
+    width: 100%;   /* Para garantir que ocupe toda a largura disponível */
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

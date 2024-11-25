@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #F2F0F0; 
+  
+
+}
+
+.tabela { 
+    width: 100%; 
+
+}
+
+.header_tabela { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #0D0D0D;
+    flex-wrap: wrap;
+
+} 
+
+
+
+/* tabela */
+.tabela-section { 
+  height: 490px; 
+  overflow: auto; 
+
+} 
+table {
+    width: 100%; 
+    table-layout: fixed; 
+    min-width: 900px; 
+    border-collapse: collapse;
+    background-color: #fff; 
+}
+
+
+thead th {
+    position: sticky; 
+    top: 0; 
+    background-color: #f6f9fc;
+    color: #8493a5; 
+    font-size: 15px; 
+
+}
+th,td { 
+    border-bottom: 1px solid #dddddd; 
+    padding: 10px 20px; 
+    word-break: break-all; 
+    text-align: center; 
+
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+  .botoes-centrais {
+    color: #f2f0f0; 
+    background-color: #F22EAE;
+    margin: 0 5px 0 5px; 
+    border-radius: 5px; 
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    margin: 10px;
+  }
+
+/* Botão do atualizar */
+.atualizar a {
+    display: inline-block; 
+    text-decoration: none; 
+    padding: 15px; 
+    border-radius: 5px; 
+    background-color: #F22EAE;
+    color: #fff;
+    font-family: 'Poppins', sans-serif; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Botão Apagar */
+.apagar form input {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px; 
+    background-color: #d80000;
+    color: #fff; 
+    border: none; 
+    font-family: 'Poppins', sans-serif; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    font-size: 16px;
+}
+
+td {
+    text-align: center; 
+    vertical-align: middle;
+}
+  h1 { 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px; 
+    color: #fff; 
+    background-color: #0D0D0D;
+    
+  }
+  .apagar form input{
+    cursor: pointer;
+    padding: 15px 15px 15px 15px; 
+    border-radius: 5px; 
+    background-color: #d80000;
+    color: #fff; 
+    border: none; 
+    font-family: 'Poppins', sans-serif; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+  }

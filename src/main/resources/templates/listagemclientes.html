@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <title>Listagem de Clientes </title>
+    <link rel="stylesheet" href="/css/listagem.css">
+
+</head>
+<body>
+    <header class="header_tabela"> <h1>Listagem de Clientes</h1> </header>
+    <div class="tabela-section">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Endereço</th>
+                <th>Alterar</th>
+                <th>Deletar </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui nesse each ele percorre os itens mesmo, aqui estamos falando qual objeto ele vai iterar, que no caso sera clientes, é tipo um for -->
+            <tr th:each="cliente : ${clientes}">
+                <!-- O th text vai insertar um texto -->
+                    <td th:text="${cliente.id}"></td>
+                    <td th:text="${cliente.nome}"></td>
+                    <td th:text="${cliente.email}"></td>
+                    <td th:text="${cliente.telefone}"></td>
+                    <td th:text="${cliente.endereco}"></td>
+                    <td class="atualizar"><a th:href="@{'/atualizarcliente/' + ${cliente.id}}">Atualizar</a></td>
+                    <td class="apagar"><form th:action="@{'/deletar/' + ${cliente.id}}" method="post"><input type="submit" value="Apagar"></td>
+                    </form>
+            </tr> 
+        </tbody>
+    </table>
+    </div>
+ <div class="botao"> <button class="botoes-centrais"> <a style="color: #fff; text-decoration: none; justify-content: center;" th:href="@{/}">Voltar para o index</a></button> </div>
+</body>
+</html>

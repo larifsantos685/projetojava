@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="/css/principal.css">
+
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <!--logo do canto-->
+            <div class="logo">
+                <span class="principal"> Sistema <span style="color:#F22EAE">Salão de beleza </span></span> </span>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a th:href="@{/listagemclientes}">Clientes </a></li>
+                   
+
+                </ul>
+            </nav> 
+       
+          
+            
+            
+    </header>
+    <main>
+
+        <h1> Controle de acesso </h1>
+
+       <div class="img-container"><img src="/img/undraw_undraw_design_1w1r_-1-_812s (1).svg" alt="Ilustração"></div>
+
+        <div class="botoes">
+            <a th:href="@{/cadastro}"><button class="botoes-centrais"> Cadastro de Clientes </button></a> 
+            
+        </div>
+            
+
+    </main>
+
+</body>
+</html>
